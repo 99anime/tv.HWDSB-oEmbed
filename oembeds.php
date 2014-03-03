@@ -8,8 +8,11 @@ Author URI: http://mrjarbenne.ca
 License: GPLv2 or later
 */
 
-add_action( 'init', 'add_oembed_tvhwdsb' );
+add_action( 'init', 'hwdsb_add_tv_hwdsb_oembed_provider' );
 
-function add_oembed_tvhwdsb() {
-wp_oembed_add_provider( 'https://tv.hwdsb.on.ca/id.*', 'https://tv.hwdsb.on.ca/oembed', true );
+/**
+ * Adds HWDSB Commons' TV subsite as an oEmbed provider.
+ */
+function hwdsb_add_tv_hwdsb_oembed_provider() {
+	wp_oembed_add_provider( 'https://tv.hwdsb.on.ca/id.*', 'https://tv.hwdsb.on.ca/oembed', true );
 }	
