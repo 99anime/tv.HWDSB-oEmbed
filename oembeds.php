@@ -7,7 +7,7 @@ Author: mrjarbenne
 Author URI: http://mrjarbenne.ca
 License: GPLv2 or later
 */
-
+echo "hello";
 add_action( 'init', 'hwdsb_add_tv_hwdsb_oembed_provider' );
 
 /**
